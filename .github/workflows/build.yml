@@ -29,13 +29,30 @@ jobs:
         run: |
           npm ci
           npm install -g expo-cli
-          npx expo prebuild --clean
+          npm install -g eas-cli
+
+      - name: 🔍 Debug Environment
+        run: |
+          node --version
+          npm --version
+          expo --version
+          ls -la
+
+      - name: 🏗 Prebuild Android
+        run: |
+          npx expo prebuild --platform android --clean
+
+      - name: 📱 Debug Android files
+        run: |
+          ls -la android/
+          ls -la android/app/
+          cat android/local.properties || echo "No local.properties found"
 
       - name: 🏗 Build Android app
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: 📱 Upload APK
         uses: actions/upload-artifact@v3
