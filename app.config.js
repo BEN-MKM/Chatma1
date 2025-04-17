@@ -70,7 +70,10 @@ export default {
     ],
     extra: {
       supabaseUrl: 'VOTRE_URL_SUPABASE',
-      supabaseAnonKey: 'VOTRE_CLE_ANONYME_SUPABASE'
+      supabaseAnonKey: 'VOTRE_CLE_ANONYME_SUPABASE',
+      eas: {
+        projectId: '270c77a4-4e6f-4756-bc1f-b4b63b5ba176'
+      }
     }
   }
 };

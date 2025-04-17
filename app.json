@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.chatma.app"
+      "package": "com.benmkm.chatma"
     },
     "web": {
       "favicon": "./assets/favicon.png"
