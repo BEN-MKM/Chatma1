@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "ChatMa",
+    "slug": "chatma",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chatma.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.chatma.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "L'application souhaite accéder à vos photos pour vous permettre de partager des images.",
+          "cameraPermission": "L'application souhaite accéder à votre caméra pour prendre des photos."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "L'application souhaite accéder à votre caméra pour scanner les QR codes et prendre des photos."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "L'application souhaite accéder à vos contacts pour vous permettre d'inviter vos amis."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "L'application souhaite accéder à votre position pour partager votre localisation avec vos contacts."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/notification-sound.wav"]
+        }
+      ]
+    ]
+  }
+}
