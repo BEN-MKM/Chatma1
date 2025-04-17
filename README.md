@@ -1,7 +1,29 @@
 # ChatMa - Application de Chat Mobile
 
+[![Expo](https://img.shields.io/badge/Essayer%20sur-Expo-%23000020)](https://snack.expo.dev/@benmkm/chatma1)
+
+## 🎟️ Démo en ligne
+Vous pouvez tester l'application directement dans votre navigateur :
+- [📱 Ouvrir dans Expo Snack](https://snack.expo.dev/@benmkm/chatma1)
+- [📲 Télécharger l'APK](https://github.com/BEN-MKM/Chatma1/releases/latest)
+
 ## 📱 À propos
 ChatMa est une application mobile moderne développée avec React Native et Expo, offrant une expérience de chat intuitive et performante.
+
+## 📸 Captures d'écran
+
+<div align="center">
+
+### Page de connexion
+<img src=".github/images/login.png" alt="Page de connexion" width="300"/>
+
+### Liste des conversations
+<img src=".github/images/conversations.png" alt="Liste des conversations" width="300"/>
+
+### Chat en direct
+<img src=".github/images/chat.png" alt="Chat en direct" width="300"/>
+
+</div>
 
 ## ✨ Fonctionnalités
 - Interface utilisateur moderne et responsive
